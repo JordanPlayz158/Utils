@@ -50,18 +50,11 @@
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ssh</artifactId>
+                <artifactId>wagon-ssh-external</artifactId>
                 <version>3.4.1</version>
             </extension>
         </extensions>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>My-Maven-Repository</id>
-            <url>sftp://192.168.1.192/upload/maven-repository</url>
-        </repository>
-    </distributionManagement>
 
     <repositories>
         <repository>
