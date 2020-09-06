@@ -56,6 +56,13 @@
         </extensions>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>My-Maven-Repository</id>
+            <url>sftp://192.168.1.192/upload/maven-repository</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>jcenter</id>
