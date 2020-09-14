@@ -59,7 +59,7 @@
     <distributionManagement>
         <repository>
             <id>My-Maven-Repository</id>
-            <url>sftp://192.168.1.192/upload/maven-repository</url>
+            <url>https://maven.jordanplayz158.me/snapshots</url>
         </repository>
     </distributionManagement>
 
