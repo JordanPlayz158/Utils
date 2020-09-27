@@ -9,11 +9,9 @@ import java.nio.channels.ReadableByteChannel;
 
 public class downloadFile {
     // Function I made to easily download and save files
-    public static void downloadFile(String url, String filename) throws IOException {
-        // Casts the String url as a URL named URL (So URL.openStream works)
-        URL URL = new URL(url);
+    public static void downloadFile(URL url, String filename) throws IOException {
         // Opens/reads the file
-        ReadableByteChannel readableByteChannel = Channels.newChannel(URL.openStream());
+        ReadableByteChannel readableByteChannel = Channels.newChannel(url.openStream());
 
         // Tells the function what to log the downloaded file to (which in this case is the String defined when calling the function, filename)
         FileOutputStream fileOutputStream = new FileOutputStream(filename);

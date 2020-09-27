@@ -4,3 +4,6 @@
 Utils.iml
 .project
 .classpath
+/src/test
+TestJson.json
+TestJsonArray.json
