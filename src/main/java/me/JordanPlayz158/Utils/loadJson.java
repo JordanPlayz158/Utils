@@ -1,6 +1,7 @@
 package me.JordanPlayz158.Utils;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -54,6 +55,18 @@ public class loadJson {
 
             // close reader
             reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static JsonObject LinkedTreeMap(String file) {
+        try {
+            // create a reader
+            Reader reader = Files.newBufferedReader(Paths.get(file));
+
+            return gson.fromJson(reader, JsonObject.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
