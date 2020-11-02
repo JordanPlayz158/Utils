@@ -1,10 +1,9 @@
-/target
 /.idea
+/src/test
+/target
 /.settings
-Utils.iml
+Utils-Plain.iml
 .project
 .classpath
-/src/test
 TestJson.json
 TestJsonArray.json
-Test.zip
