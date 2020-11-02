@@ -1,6 +1,6 @@
 # Utils
 
-Utils contains all the common functions I use across all my projects
+This branch of my Utils is for any functions that require no external dependencies.
 
 ## Add the dependency to Maven
 
