@@ -1,4 +1,4 @@
-# Utils
+# Utils-Plain
 
 This branch of my Utils is for any functions that require no external dependencies.
 
@@ -14,7 +14,7 @@ This branch of my Utils is for any functions that require no external dependenci
     <dependencies>
         <dependency>
             <groupId>me.JordanPlayz158</groupId>
-            <artifactId>Utils</artifactId>
+            <artifactId>Utils-Plain</artifactId>
             <version>2.1.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
