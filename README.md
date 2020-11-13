@@ -1,10 +1,24 @@
-# Utils
+# Utils-JDA
 
-Utils contains all the common functions I use across all my projects
+This branch of my Utils is for any functions for my JDA bots.
 
 ## Add the dependency to Maven
 
-TBD (To Be Done)
+```xml
+    <repositories>
+        <repository>
+            <id>My-Private-Maven-Repository</id>
+            <url>https://maven.jordanplayz158.me/snapshots</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>me.JordanPlayz158</groupId>
+            <artifactId>Utils-JDA</artifactId>
+            <version>2.1.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+```
 
 ## License
 [MIT]((https://choosealicense.com/licenses/mit/)
