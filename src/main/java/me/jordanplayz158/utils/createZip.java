@@ -1,4 +1,4 @@
-package me.JordanPlayz158.Utils;
+package me.jordanplayz158.utils;
 
 import net.lingala.zip4j.ZipFile;
 import net.lingala.zip4j.exception.ZipException;
