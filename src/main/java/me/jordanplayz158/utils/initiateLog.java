@@ -1,4 +1,4 @@
-package me.JordanPlayz158.Utils;
+package me.jordanplayz158.utils;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
