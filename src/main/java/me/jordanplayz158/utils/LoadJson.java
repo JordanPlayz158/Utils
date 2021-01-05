@@ -1,23 +1,23 @@
-package me.JordanPlayz158.Utils;
+package me.jordanplayz158.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class loadJson {
+public class LoadJson {
     private static final Gson gson = new Gson();
 
     // Function I have made for other projects that I put into this one for simple json value loading
-    public static String value(String file, String key) {
+    public static String value(File file, String key) {
         try {
             // create a reader
-            Reader reader = Files.newBufferedReader(Paths.get(file));
+            Reader reader = Files.newBufferedReader(file.toPath());
 
             // convert JSON file to map
             Map<?, ?> map = gson.fromJson(reader, Map.class);
@@ -38,10 +38,10 @@ public class loadJson {
     }
 
     // Function I have made for other projects that I put into this one for simple json value loading
-    public static ArrayList array(String file, String key) {
+    public static ArrayList<?> array(File file, String key) {
         try {
             // create a reader
-            Reader reader = Files.newBufferedReader(Paths.get(file));
+            Reader reader = Files.newBufferedReader(file.toPath());
 
             // convert JSON file to map
             Map<?, ?> map = gson.fromJson(reader, Map.class);
@@ -49,7 +49,7 @@ public class loadJson {
             // print map entries
             for(Map.Entry<?, ?> entry : map.entrySet()) {
                 if(entry.getKey().equals(key)) {
-                    return (ArrayList) entry.getValue();
+                    return (ArrayList<?>) entry.getValue();
                 }
             }
 
@@ -58,18 +58,19 @@ public class loadJson {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return null;
     }
 
-    public static JsonObject LinkedTreeMap(String file) {
+    public static JsonObject linkedTreeMap(File file) {
         try {
             // create a reader
-            Reader reader = Files.newBufferedReader(Paths.get(file));
+            Reader reader = Files.newBufferedReader(file.toPath());
 
             return gson.fromJson(reader, JsonObject.class);
         } catch (IOException e) {
             e.printStackTrace();
+            return null;
         }
-        return null;
     }
 }
