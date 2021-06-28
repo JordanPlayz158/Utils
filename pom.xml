@@ -29,12 +29,12 @@
         </plugins>
     </build>
 
-    <distributionManagement>
+    <!--<distributionManagement>
         <repository>
             <id>My-Maven-Repository</id>
             <url>https://maven.jordanplayz158.me/snapshots</url>
         </repository>
-    </distributionManagement>
+    </distributionManagement>-->
 
     <repositories>
         <repository>
